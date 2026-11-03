@@ -4,31 +4,38 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.435 0.138 142);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.435 0.138 142);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.435 0.138 142);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.435 0.138 142);
+  --background: oklch(0.968 0.018 85);
+  --foreground: oklch(0.26 0.032 45);
+  --card: oklch(0.988 0.012 88);
+  --card-foreground: oklch(0.26 0.032 45);
+  --popover: oklch(0.988 0.012 88);
+  --popover-foreground: oklch(0.26 0.032 45);
+  --primary: oklch(0.52 0.14 32);
+  --primary-foreground: oklch(0.98 0.012 88);
+  --secondary: oklch(0.5 0.09 195);
+  --secondary-foreground: oklch(0.98 0.012 88);
+  --muted: oklch(0.93 0.022 82);
+  --muted-foreground: oklch(0.48 0.03 55);
+  --accent: oklch(0.55 0.1 193);
+  --accent-foreground: oklch(0.98 0.012 88);
+  --destructive: oklch(0.55 0.2 27);
+  --destructive-foreground: oklch(0.98 0.012 88);
+  --border: oklch(0.87 0.03 78);
+  --input: oklch(0.87 0.03 78);
+  --ring: oklch(0.68 0.13 70);
+  --gold: oklch(0.75 0.13 78);
+  --gold-foreground: oklch(0.25 0.04 50);
+  --sand: oklch(0.93 0.03 82);
+  --ink: oklch(0.24 0.035 48);
+  --gradient-hero: linear-gradient(140deg, oklch(0.32 0.06 40) 0%, oklch(0.4 0.11 32) 45%, oklch(0.42 0.08 195) 100%);
+  --gradient-gold: linear-gradient(100deg, oklch(0.8 0.12 85), oklch(0.68 0.14 62));
+  --shadow-card: 0 2px 0 0 color-mix(in oklab, var(--gold) 45%, transparent);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.625rem;
+  --radius: 0.75rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: oklch(0.205 0 0);
@@ -40,25 +47,29 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
+  --background: oklch(0.19 0.025 50);
+  --foreground: oklch(0.95 0.015 85);
+  --card: oklch(0.24 0.03 48);
+  --card-foreground: oklch(0.95 0.015 85);
+  --popover: oklch(0.24 0.03 48);
+  --popover-foreground: oklch(0.95 0.015 85);
+  --primary: oklch(0.68 0.14 42);
+  --primary-foreground: oklch(0.18 0.025 50);
+  --secondary: oklch(0.6 0.1 195);
+  --secondary-foreground: oklch(0.18 0.025 50);
+  --muted: oklch(0.28 0.03 50);
+  --muted-foreground: oklch(0.74 0.025 75);
+  --accent: oklch(0.62 0.1 193);
+  --accent-foreground: oklch(0.18 0.025 50);
+  --destructive: oklch(0.65 0.19 27);
+  --destructive-foreground: oklch(0.98 0.012 88);
+  --border: oklch(1 0 0 / 0.12);
+  --input: oklch(1 0 0 / 0.15);
+  --ring: oklch(0.7 0.13 72);
+  --gold: oklch(0.78 0.13 80);
+  --gold-foreground: oklch(0.2 0.03 50);
+  --sand: oklch(0.3 0.03 60);
+  --ink: oklch(0.12 0.02 50);
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -75,8 +86,9 @@
 }
 
 @theme inline {
-  --font-sans: 'Geist', 'Geist Fallback';
-  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-display: var(--font-cinzel), Georgia, serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -91,6 +103,10 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-gold: var(--gold);
+  --color-gold-foreground: var(--gold-foreground);
+  --color-sand: var(--sand);
+  --color-ink: var(--ink);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
@@ -122,4 +138,33 @@
   body {
     @apply bg-background text-foreground;
   }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+}
+
+@utility hero-surface {
+  background-image: var(--gradient-hero);
+}
+
+/* Moroccan zellige-style dot pattern used over the hero */
+@utility zellige {
+  background-image:
+    radial-gradient(circle at 50% 50%, color-mix(in oklab, var(--gold) 22%, transparent) 0 2px, transparent 2px),
+    radial-gradient(circle at 0 0, color-mix(in oklab, var(--accent) 16%, transparent) 0 2px, transparent 2px);
+  background-position: 0 0, 14px 14px;
+  background-size: 28px 28px;
+}
+
+@utility relic-card {
+  background-color: var(--card);
+  border: 1px solid color-mix(in oklab, var(--gold) 38%, transparent);
+  box-shadow: var(--shadow-card);
+}
+
+@utility gold-rule {
+  background-image: var(--gradient-gold);
 }
